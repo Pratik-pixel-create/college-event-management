@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>CollegeEventMgmt</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>LogoutServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>  
+  <servlet>
+  <servlet-name>ViewEventsServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.ViewEventsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ViewEventsServlet</servlet-name>
+  <url-pattern>/ViewEventsServlet</url-pattern>
+</servlet-mapping>  
+  <servlet>
+  <servlet-name>AddEventServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.AddEventServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>AddEventServlet</servlet-name>
+  <url-pattern>/AddEventServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+  <servlet-name>ListEventsServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.ListEventsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ListEventsServlet</servlet-name>
+  <url-pattern>/ListEventsServlet</url-pattern>
+</servlet-mapping>   
+<servlet>
+  <servlet-name>RegisterEventServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.RegisterEventServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>RegisterEventServlet</servlet-name>
+  <url-pattern>/RegisterEventServlet</url-pattern>
+</servlet-mapping>   
+<servlet>
+  <servlet-name>MyRegistrationsServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.MyRegistrationsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>MyRegistrationsServlet</servlet-name>
+  <url-pattern>/MyRegistrationsServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+  <servlet-name>UpdateEventServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.UpdateEventServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>UpdateEventServlet</servlet-name>
+  <url-pattern>/UpdateEventServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+  <servlet-name>DeleteEventServlet</servlet-name>
+  <servlet-class>com.collegeevent.controller.DeleteEventServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>DeleteEventServlet</servlet-name>
+  <url-pattern>/DeleteEventServlet</url-pattern>
+</servlet-mapping>
+</web-app>
